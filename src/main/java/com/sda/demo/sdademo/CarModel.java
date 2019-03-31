@@ -1,6 +1,10 @@
 package com.sda.demo.sdademo;
 
-public class CarModel {
+/**
+ * Use {@linkplain CarModelEurope} instead
+ */
+@Deprecated
+public class CarModel implements Comparable<CarModel> {
     private static final double LITERS_PER_GALLON = 3.785411784;
 
     private int year;
@@ -112,4 +116,8 @@ public class CarModel {
         return Double.valueOf(getEngineDisplay());
     }
 
+    @Override
+    public int compareTo(CarModel o) {
+        return Integer.compare(getYear(), o.getYear());
+    }
 }

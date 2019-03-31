@@ -9,6 +9,7 @@ public class CarModelEurope {
     private double cityFuelConsumption;
     private double highwayFuelConsumption;
     private double combinedFuelConsumption;
+    private String image = "https://media.wired.com/photos/5b86fce8900cb57bbfd1e7ee/master/pass/Jaguar_I-PACE_S_Indus-Silver_065.jpg";
 
     public int getYear() {
         return year;
@@ -72,5 +73,9 @@ public class CarModelEurope {
 
     public void setCombinedFuelConsumption(double combinedFuelConsumption) {
         this.combinedFuelConsumption = combinedFuelConsumption;
+    }
+
+    public String getImage() {
+        return image;
     }
 }
